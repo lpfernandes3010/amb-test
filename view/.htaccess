@@ -1,0 +1,10 @@
+RewriteEngine on
+
+RewriteRule ^GET/pdvs?$ pdvs/listarTudo.php
+RewriteRule ^GET/pdvs\/([0-9A-z_-]+)$ pdvs/listar.php?id=$1 [QSA,L,NC]
+RewriteRule ^DELETE/pdvs\/([0-9A-z_-]+)$ pdvs/excluir.php?id=$1 [QSA,L,NC]
+
+
+
+
+
